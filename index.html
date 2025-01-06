@@ -1,50 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirae Asset Pegasus</title>
+    <title>Gia đình M.Peg - Mirae Asset</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
             text-align: center;
-            background-color: #f4f4f4;
+            transition: background-color 0.5s ease;
         }
-        .header {
-            background-color: #0056b3;
-            color: #fff;
-            padding: 20px;
+        section img {
+            max-width: 300px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease;
         }
-        .mascot {
-            margin: 20px;
+        section h2 {
+            font-size: 2.5em;
+            margin: 10px 0;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        section p {
+            font-size: 1.2em;
+            max-width: 600px;
         }
-        .footer {
-            background-color: #0056b3;
-            color: #fff;
-            padding: 10px;
+        section:hover img {
+            transform: scale(1.1);
+        }
+        .introduction {
+            background-color: #444;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .introduction h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .introduction p {
+            font-size: 1.2em;
+            margin-bottom: 20px; /* Tăng khoảng cách giữa các đoạn */
+            line-height: 1.8; /* Tăng độ cao dòng cho dễ đọc */
+            text-align: left; /* Canh trái để dễ đọc */
+            max-width: 800px; /* Đảm bảo chiều rộng vừa phải */
+            margin-left: auto; /* Căn giữa */
+            margin-right: auto;
+        }
+        /* Mia Section */
+        #mia {
+            background-color: #FFB385;
+        }
+        /* Mira Section */
+        #mira {
+            background-color: #85C1E9;
+        }
+        /* Neo Section */
+        #neo {
+            background-color: #A3E4D7;
+        }
+        /* Max Section */
+        #max {
+            background-color: #F39C12;
+        }
+        .nav {
             position: fixed;
-            bottom: 0;
-            width: 100%;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+            padding: 5px 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background: rgba(255, 255, 255, 0.5);
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Mirae Asset Securities (Vietnam)</h1>
-        <p>Meet our Pegasus mascot - a symbol of growth and innovation!</p>
-    </div>
-    <div class="mascot">
-        <img src="pegasus_image.png" alt="Pegasus Mascot">
-    </div>
-    <div class="footer">
-        <p>&copy; 2025 Mirae Asset Securities (Vietnam). All rights reserved.</p>
-    </div>
+
+<section class="introduction">
+    <h1>Giới thiệu Gia đình M.Peg – Gia Đình Linh Vật của CTCK Mirae Asset (Việt Nam)</h1>
+    <p>Ngày xưa, ở một vùng đất nơi các nhà đầu tư luôn tìm kiếm sự ổn định và phát triển, gia đình M.Peg – những chú Pegasus với đôi cánh ánh vàng rực rỡ – đã được tạo ra bởi các vị thần tài chính.</p>
+    <p>Gia đình M.Peg không chỉ đại diện cho sự tăng trưởng bền vững, mà còn là hiện thân của trí tuệ và công nghệ, mang trong mình sứ mệnh giúp mọi người hiện thực hóa giấc mơ tài chính.</p>
+    <p>Mỗi thành viên trong gia đình M.Peg đều mang một năng lực đặc biệt, hòa quyện cùng nhau để tạo nên sức mạnh tổng thể. Với đôi cánh đầy cảm hứng, gia đình M.Peg có khả năng vẽ nên những biểu đồ tăng trưởng vững chắc, hướng dẫn nhà đầu tư nắm bắt cơ hội và vượt qua thách thức trong thị trường đầy biến động.</p>
+    <p>Gia đình M.Peg gia nhập Mirae Asset Việt Nam như một biểu tượng của sự tận tâm, luôn đổi mới và sáng tạo, đồng hành cùng khách hàng trên hành trình đầu tư.</p>
+    <p>Họ không chỉ mang đến sự tin cậy mà còn truyền cảm hứng, nhắc nhở rằng con đường tài chính không chỉ là những con số khô khan, mà là hành trình vươn tới những ước mơ lớn lao.</p>
+    <p>Hôm nay, gia đình M.Peg vẫn tiếp tục bay cao, dẫn dắt nhà đầu tư Việt Nam chinh phục những đỉnh cao mới trên thị trường tài chính toàn cầu.</p>
+</section>
+
+<div class="nav">
+    <a href="#mia">Mia</a>
+    <a href="#mira">Mira</a>
+    <a href="#neo">Neo</a>
+    <a href="#max">Max</a>
+</div>
+
+<section id="mia">
+    <img src="/mnt/data/Mia.png" alt="Mia">
+    <h2>Mia</h2>
+    <p>Mia là biểu tượng của sự ân cần và trí tuệ. Với mái tóc óng ả và đôi cánh vững chắc, Mia giúp kết nối mọi thành viên trong gia đình và truyền cảm hứng để luôn tiến bước về phía trước.</p>
+</section>
+
+<section id="mira">
+    <img src="/mnt/data/Mira.png" alt="Mira">
+    <h2>Mira</h2>
+    <p>Mira là cô Pegasus thông minh và nhanh nhẹn. Với nụ cười tự tin và đôi mắt lấp lánh, Mira mang thông điệp về sự đổi mới và khả năng vượt qua mọi thử thách trên con đường đầu tư.</p>
+</section>
+
+<section id="neo">
+    <img src="/mnt/data/Neo.png" alt="Neo">
+    <h2>Neo</h2>
+    <p>Neo là chú Pegasus nhỏ tuổi nhưng tràn đầy năng lượng và luôn tò mò. Với đôi cánh mạnh mẽ và lòng dũng cảm, Neo tượng trưng cho những ý tưởng sáng tạo và sự khởi đầu của hành trình tài chính thành công.</p>
+</section>
+
+<section id="max">
+    <img src="/mnt/data/Max.png" alt="Max">
+    <h2>Max</h2>
+    <p>Maximus là trụ cột của gia đình M.Peg. Với vẻ ngoài điềm đạm và biểu đồ tài chính trên cơ thể, Max đại diện cho sự ổn định, đáng tin cậy, và khả năng dẫn dắt mọi người đến với sự thịnh vượng tài chính.</p>
+</section>
+
 </body>
 </html>
